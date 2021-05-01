@@ -1,0 +1,98 @@
+.dropdown {
+   position: relative;
+   display: inline-block; 
+   width: 100%;
+}
+
+.dropbtn {
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    font-size: .9em;
+    padding: 0;
+    color: #777;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropbtn:focus {
+    outline: none;
+}
+
+.dropdownContent {
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    width: 100%;
+    margin-top: 10px;
+    -webkit-box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.1); 
+    box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.1);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.dropdownContent div:hover {
+    background-color: #eee;
+}
+
+.dropdownItem {
+    display: block;
+    color: #777;
+    font-size: .9em;
+    padding: 15px 10px;
+    background-color: white;
+    border-top: 1px solid #eee;
+    cursor: pointer;
+}
+
+.dropdownItem:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.notShow {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.arrowIcon {
+    width: 15px;
+    height: 15px;
+}
+
+.arrowAnimation {
+    animation-duration: .3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.openContent {
+    animation-name: rotateArrowOpen;
+}
+
+@keyframes rotateArrowOpen {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+.closeContent {
+    animation-name: rotateArrowClose;
+}
+
+@keyframes rotateArrowClose {
+    from {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}

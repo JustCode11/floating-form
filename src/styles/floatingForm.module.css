@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.bgPicture {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("../assets/backgrounds/5026563.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    perspective: 1000px;
+    width: 230px;
+    height: 450px;
+
+}
+
+.flipCardInner {
+    position: relative;
+    width: calc(100% + 80px);
+    height: calc(100% + 40px);
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.cardStyle {
+    border-radius: 30px;
+    width: calc(100% - 80px);
+    padding: 20px 40px;
+    -webkit-box-shadow: 0px 7px 28px -12px rgba(0,0,0,0.7); 
+    box-shadow: 0px 7px 28px -12px rgba(0,0,0,0.7);
+    height: calc(100% - 40px);
+
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.whiteCard {
+    background-color: white;
+}
+
+.blueCard {
+    background-color: #1e34fc;
+
+    transform: rotateY(180deg);
+}
+
+.formStyle {
+    display: flex;
+    flex-direction: column;
+    max-height: 450px;
+}
+
+.headerCardOneStyle {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.headerCardTwoStyle {
+    font-size: 3.5em;
+    color: white;
+    margin-top: 80px;
+    margin-bottom: 35px;
+}
+
+.containerCardTwoStyle {
+    margin-top: 35px;
+}
+
+.textCardTwoStyle {
+    font-size: 1.3em;
+    color: white;
+    margin: 0;
+}
+
+.formItem {
+    display: flex;
+    flex-direction: row;
+    min-height: 45px;
+}
+
+.formItemWithLabel {
+    flex-direction: column;
+    padding: 5px 0;
+    min-height: 35px;
+}
+
+.labelText {
+    color: #777;
+    font-size: .8em;
+}
+
+.inputField {
+    border: none;
+    font-size: .9em;
+    padding: 5px 0;
+}
+
+.inputField:focus {
+    outline: none;
+    text-decoration: none;
+    background-color: white;
+}
+
+.partingLine {
+    display: block;
+    margin-left: -40px;
+    width: calc(100% + 80px);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.greyLine {
+    border-top: 1px solid #ccc;
+}
+
+.blackLine {
+    border-top: 1px solid black;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.buttonText {
+    font-size: .8em;
+    margin-right: 10px;
+    letter-spacing: .2em;
+}
+
+.blueText {
+    color: #1e34fc;
+}
+
+.whiteText {
+    color: white;
+}
+
+.button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.formSubmit {
+    background: url("../assets/icons/mail-icon.svg") no-repeat;
+    background-position: 50%;
+    background-size: 50%;
+    background-color: #1e34fc;
+}
+
+.formNext {
+    background: url("../assets/icons/arrow-icon.svg") no-repeat;
+    background-position: 50%;
+    background-size: 50%;
+    background-color: #0e1ead;
+}
+
+.formSubmit:hover {
+    background-color: #0e1ead;
+}
+
+.formNext:hover {
+    background-color: #347bff;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.textAreaStyle {
+    font-family: 'Roboto', sans-serif;
+    font-size: .9em;
+    font-weight: 400;
+    width: 100%;
+    height: 100px;
+    resize: none;
+    border: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.textAreaStyle:focus {
+    outline: none;
+}
+
+.formItemDDL {
+    min-height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
